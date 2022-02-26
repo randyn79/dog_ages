@@ -1,13 +1,15 @@
+#!/usr/bin/env python3
+
 def dog_years(min_lifespan, max_lifespan, age, human_lifespan):
-    
-   
+
+
     min_year_equivalent = human_lifespan / min_lifespan
     max_year_equivalent = human_lifespan /max_lifespan
     min_human_age = age * min_year_equivalent
     max_human_age = age * max_year_equivalent
 
     return min_year_equivalent, max_year_equivalent, min_human_age, max_human_age
-    
+
 
 if __name__ == "__main__":
     min_lifespan = float(input('What is the minimum lifespan for your breed of dog? ').casefold())
@@ -29,5 +31,3 @@ if __name__ == "__main__":
     print()
     print(f"Based on the age you entered for your dog, your dog is between ")
     print(f"{max_human_age} and {min_human_age} in dog years.")
-        
-    
